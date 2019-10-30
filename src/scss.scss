@@ -1,0 +1,70 @@
+$image : 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/287eab66-0f73-4b97-8e74-849c5f06d542/ddj6fuz-19b20074-042a-4dcb-b1af-cb489a706d54.jpg/v1/fill/w_1082,h_739,q_70,strp/after_the_rain_by_anthonypresley_ddj6fuz-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNSIsInBhdGgiOiJcL2ZcLzI4N2VhYjY2LTBmNzMtNGI5Ny04ZTc0LTg0OWM1ZjA2ZDU0MlwvZGRqNmZ1ei0xOWIyMDA3NC0wNDJhLTRkY2ItYjFhZi1jYjQ4OWE3MDZkNTQuanBnIiwid2lkdGgiOiI8PTE1MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.DXP1mpkUhI2Qt4Vsf9Mp4gvjYNv071qlCKEJAMfO5BY';
+$image2 : 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/287eab66-0f73-4b97-8e74-849c5f06d542/ddirfzu-88a447d8-ad77-465f-ad83-55f38b943efd.jpg/v1/fill/w_1143,h_699,q_70,strp/late_night_scene_iv_by_anthonypresley_ddirfzu-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTE4IiwicGF0aCI6IlwvZlwvMjg3ZWFiNjYtMGY3My00Yjk3LThlNzQtODQ5YzVmMDZkNTQyXC9kZGlyZnp1LTg4YTQ0N2Q4LWFkNzctNDY1Zi1hZDgzLTU1ZjM4Yjk0M2VmZC5qcGciLCJ3aWR0aCI6Ijw9MTUwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19._5XU1Sc4rJKyVPv0asFdfMIhg7nkxdH6937OusIbyp8';
+$image3 : 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/287eab66-0f73-4b97-8e74-849c5f06d542/ddimby2-a8dcc4bd-fe6d-45e0-b2c8-d61cf1a98728.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI4N2VhYjY2LTBmNzMtNGI5Ny04ZTc0LTg0OWM1ZjA2ZDU0MlwvZGRpbWJ5Mi1hOGRjYzRiZC1mZTZkLTQ1ZTAtYjJjOC1kNjFjZjFhOTg3MjguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IA1PPltoa62lfcN_4IdNTC9tYhDUEjRtArExJOFBulM';
+
+$next : './icons8-arrow-right-64.png';
+$back : './icons8-arrow-left-64.png';
+
+#root{
+	height: 100vh;
+	width: 100%;
+}
+
+body{
+	overflow: hidden;
+}
+
+.main{
+	height: 300%;
+
+
+	.a{
+		height: 100vh;
+		background-image: url($image);
+		background-attachment: fixed;
+		background-size: contain;
+		clip-path: inset(7em 0 7em 0);
+
+	}
+	.b{
+		height: 100vh;
+		background-image: url($image2);
+		background-attachment: fixed;
+		background-size: contain;
+		clip-path: inset(7em 0 7em 0);
+	}
+	.c{
+		height: 100vh;
+		background-image: url($image3);
+		background-attachment: fixed;
+		background-size: contain;
+		clip-path: inset(7em 0 7em 0);
+	}
+
+	.buttonContainer{
+		width: 99%;
+		position: fixed;
+		top: 45%;
+		justify-content: center;
+		align-content: center;
+
+		button{
+			padding: 0.15em;
+			border: none;
+			outline: none;
+			opacity: 0.2;
+			float: left;
+		}
+
+		#next{
+			font-size: 10em;
+			float: right;
+		}
+
+		#back{
+			font-size: 10em;
+			float: left;
+		}	
+	}
+
+}
